@@ -17,3 +17,11 @@ Cannot go over the dimensions  of the plateau - no negative numbers
 Rovers turn 90 degrees so can only move vertically and horizontally
 Each L or R instruction is only 90 degrees
 Movement instructions can only be made up of "LRM"
+
+Instructing a Rover to Move Around the Plateau.
+0 0 N means the Rover is at the bottom-left corner facing in the North direction.
+To move a Rover around the Plateau, a string of letters is sent to a Rover. 
+Here are the letters and their actions :
+L Spins the Rover 90 degrees Left without moving from the current coordinate point
+R Spins the Rover 90 degrees Right without moving from the current coordinate point
+M Moves the Rover forward by one grid point, maintaining its orientation.
