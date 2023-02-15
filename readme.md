@@ -25,3 +25,7 @@ Here are the letters and their actions :
 L Spins the Rover 90 degrees Left without moving from the current coordinate point
 R Spins the Rover 90 degrees Right without moving from the current coordinate point
 M Moves the Rover forward by one grid point, maintaining its orientation.
+
+To Do
+- Functionality to include multiple rovers.
+- functionality to  manage obstructions and avoid collisions.
