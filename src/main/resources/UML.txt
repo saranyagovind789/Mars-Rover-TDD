@@ -1,0 +1,11 @@
+UML Design
+
+1)Plateau class 
+2)Rover class 
+3)Enumeration for North, South, East and West. 
+4)Enumeration for L (Left Rotation), R (Right Rotation) and M (Move forward one grid point). 
+5)Position class to handle the x and y positions on the Plateau.
+
+UML:Dependencies, Associations and Relationships:
+The Plateau has to exist before a Rover can exist so there is a one to one relationship between Rover class and Plateau.
+Rover cannot exist without a Plateau.
