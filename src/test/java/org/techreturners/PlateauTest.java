@@ -19,4 +19,15 @@ public class PlateauTest {
 
     }
 
+    @Test
+    public void checkUserCanNotCreatePlateauOfZeroSize() {
+        //Arrange
+        Plateau plateau = new Plateau(0, 0);
+        String expectedResult = "Values are not recognised. Please enter the Plateau dimensions as positive numbers, of the form x y.";
+        //Act
+        String actual = plateau.getDimensions();
+        //Assert
+        Assertions.assertEquals(expectedResult, actual);
+    }
+
 }
