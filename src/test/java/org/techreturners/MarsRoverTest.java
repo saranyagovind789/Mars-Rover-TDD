@@ -15,9 +15,39 @@ public class MarsRoverTest {
 
     @Test
     public void checkMarsRoverCanMoveOneGridPointIfFacingNorth() {
-        MarsRover marsRover = new MarsRover("0 0 N", plateau);
+        //Arrange
+        MarsRover marsRover = new MarsRover("1 2 N", plateau);
+        String expectedResult = "1 3 N";
+        //Act
+        PlateauPosition actual = marsRover.ParseInstructions("M");
+        // Assert
+        Assertions.assertEquals(expectedResult, actual.getPlateauPosition());
+
     }
 
+    @Test
+    public void checkMarsRoverCanTurnClockwiseFromNorthToEast() {
+        //Arrange
+        MarsRover marsRover = new MarsRover("1 2 N", plateau);
+        char expectedResult = 'E';
+        //Act
+        PlateauPosition actual = marsRover.ParseInstructions("R");
+        // Assert
+        Assertions.assertEquals(expectedResult, actual.compass);
+
+    }
+
+    @Test
+    public void checkMarsRoverCanTurnAntiClockwiseFromNorthToWest() {
+        //Arrange
+        MarsRover marsRover = new MarsRover("1 2 N", plateau);
+        char expectedResult = 'W';
+        //Act
+        PlateauPosition actual = marsRover.ParseInstructions("L");
+        //Assert
+        Assertions.assertEquals(expectedResult, actual.compass);
+
+    }
 
 
 }
